@@ -1,0 +1,25 @@
+{
+  "courses": [
+    {
+      "title": "Artificial intelligence (AI)",
+      "time": "1 hr",
+      "value": "ai_learn",
+      "description": "Artificial Intelligence (AI) is transforming our daily lives, workplaces, and industries. From virtual assistants to medical diagnoses, AI is everywhere. This section explores AI’s impact, applications, and challenges.",
+      "cover_image": "https://i.ibb.co/Y4YHCH6S/ai.jpg"
+    },
+    {
+      "title": "Web3",
+      "time":  "30 min",
+      "value": "web3_learn",
+      "description": "Web3 is a new vision for the internet, built on decentralization, blockchain, and user ownership. This section covers how Web3 works, its benefits, and challenges.",
+      "cover_image": "https://i.ibb.co/PzxGvSpn/web3.jpg"
+    },
+    {
+      "title": "The future of work",
+      "time": "20 min",
+      "value": "future_work_learn",
+      "description": "The workplace is evolving rapidly due to technology, automation, and the gig economy. This section explores how jobs are changing and what skills will be essential in the future.",
+      "cover_image": "https://i.ibb.co/WWs1ybfF/Group-6.jpg"
+    }
+  ]
+}
