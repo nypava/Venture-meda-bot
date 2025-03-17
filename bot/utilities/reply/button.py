@@ -23,16 +23,17 @@ setup_markup = InlineKeyboardMarkup(
     ]
 )
 
-def GenerateLearnMarkup(learn_url: str ,quiz_url) -> InlineKeyboardMarkup:
+def GenerateLearnMarkup(learn_url: str ,quiz_url:str, course:str) -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton("Learn", web_app=WebAppInfo(learn_url)),
+                InlineKeyboardButton("Quiz", web_app=WebAppInfo(quiz_url))
             ],
             [
-                InlineKeyboardButton("Quiz", web_app=WebAppInfo(quiz_url))
+                InlineKeyboardButton("Certificate", callback_data=f"{course}_certificate")
             ]
-        ]
+       ]
     )
 
 
