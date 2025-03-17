@@ -11,7 +11,7 @@ export async function POST ({request}: {request: Request}) {
 async function sendTelegramMessage(photo: string, caption: string, chat_id: string) {
   try{
 
-    const url = `https://api.telegram.org/bot${bot_token}/sendPhoto`;
+    const telegram_url = `https://api.telegram.org/bot${bot_token}/sendPhoto`;
 
     const formData = new FormData();
     formData.append('chat_id', chat_id);
@@ -37,7 +37,7 @@ async function sendTelegramMessage(photo: string, caption: string, chat_id: stri
       ]
     }))
 
-       const response = await fetch(url, {
+       const response = await fetch(telegram_url, {
          method: "POST",
          body: formData,
        });
