@@ -33,12 +33,14 @@ class CallbackHandler():
                 if i["value"] == callback.data:
                     course = i
 
+            print(f"{quiz_url}?value={course["value"]}")
+
             self.bot.send_photo(
                 user_id, 
                 photo=course["cover_image"], 
                 caption=text["course_detail"].format(course["title"], course["description"], '1', course["time"]), 
                 parse_mode="HTML",
-                reply_markup=GenerateLearnMarkup(f"{learn_url}/learn/{course["value"]}", f"{quiz_url}/{course["value"]}")
+                reply_markup=GenerateLearnMarkup(f"{learn_url}/learn/{course["value"]}", f"{quiz_url}?value={course["value"]}")
             ) 
         
         if "done" in str(callback.data): 
