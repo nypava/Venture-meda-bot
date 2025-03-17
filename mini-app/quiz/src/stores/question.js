@@ -220,12 +220,11 @@ let quesions = {
 
 export let questionStore = writable([]);
 export let titleStore = writable("");
-let path_name = window.location.pathname.slice(1);
+let path_name =  new URLSearchParams(window.location.search)
 
 async function quizFetch() {
     console.error(path_name)
-    questionStore.set(quesions[path_name]["questions"]);
-    titleStore.set(quesions[path_name]["title"]);
+    questionStore.set(quesions[path_name.get("value")]["questions"]);
+    titleStore.set(quesions[path_name.get("value")]["title"]);
 };
-
 quizFetch();
