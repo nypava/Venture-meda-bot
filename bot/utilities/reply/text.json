@@ -2,5 +2,5 @@
   "register": "Please register your profile to continue using Venture Meda LMS.",
   "start": "*Welcome to Venture Meda LMS\\!* \n\nPlease select a course that you are interested in enrolling in from the extensive list of courses provided below",
   "explore": "⬇️ These are the courses currently available on the Venture Meda bot.",
-  "course_detail": "<b>{} </b> \n{} \n\n👤 {} Enrolled • 🕐 {} "
+  "course_detail": "<b>{} </b> \n{} \n\n• 🕐 {} "
 }

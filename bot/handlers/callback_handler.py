@@ -38,7 +38,7 @@ class CallbackHandler():
             self.bot.send_photo(
                 user_id, 
                 photo=course["cover_image"], 
-                caption=text["course_detail"].format(course["title"], course["description"], '1', course["time"]), 
+                caption=text["course_detail"].format(course["title"], course["description"], course["time"]), 
                 parse_mode="HTML",
                 reply_markup=GenerateLearnMarkup(f"{learn_url}/learn/{course["value"]}", f"{quiz_url}?value={course["value"]}")
             ) 
