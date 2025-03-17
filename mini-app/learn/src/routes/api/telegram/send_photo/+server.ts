@@ -2,15 +2,14 @@ import { bot_token } from "$env/static/private";
 import { url } from "$env/static/private";
 import { json } from "@sveltejs/kit";
 
-export async function POST ({request}: {request: Request}) {
+export async function POST({ request }: { request: Request }) {
   const data = await request.json();
 
-  sendTelegramMessage(data.photo, data.caption, data.chat_id)
+  return await sendTelegramMessage(data.photo, data.caption, data.chat_id);
 }
 
 async function sendTelegramMessage(photo: string, caption: string, chat_id: string) {
-  try{
-
+  try {
     const telegram_url = `https://api.telegram.org/bot${bot_token}/sendPhoto`;
 
     const formData = new FormData();
@@ -35,16 +34,22 @@ async function sendTelegramMessage(photo: string, caption: string, chat_id: stri
           },
         ]
       ]
-    }))
+    }));
 
-       const response = await fetch(telegram_url, {
-         method: "POST",
-         body: formData,
-       });
+    const response = await fetch(telegram_url, {
+      method: "POST",
+      body: formData,
+    });
 
-       let json_data = await response.json();
-       return json({ success: "true", result: JSON.stringify(json_data)});
+    const json_data = await response.json();
+    if (!response.ok) {
+      console.error("Telegram API error:", json_data);
+      return json({ success: "false", error: json_data });
+    }
+
+    return json({ success: "true", result: JSON.stringify(json_data) });
   } catch (e) {
-    return json({ success: "false" })
+    console.error("Error sending Telegram message:", e);
+    return json({ success: "false", error: e.message || e });
   }
 }
