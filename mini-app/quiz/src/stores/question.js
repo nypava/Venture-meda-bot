@@ -1,8 +1,9 @@
 import { writable } from "svelte/store";
 
 let quesions = {
-  "AI Knowledge Test": {
+  "ai_learn": {
   "title": "AI Knowledge Test",
+  "value": "ai_learn",
   "questions": [
     {
       "question-text": "What is Artificial Intelligence (AI)?",
@@ -72,8 +73,9 @@ let quesions = {
   ]
 },
 
-  "Web3 Knowledge Test": {
+  "web3_learn": {
     "title": "Web3 Knowledge Test",
+    "value": "web3_learn",
     "questions": [
       {
         "question-text": "What is Web3?",
@@ -143,8 +145,9 @@ let quesions = {
     ]
   },
 
-  "Future of Work Knowledge Test": {
+  "future_work_learn": {
     "title": "Future of Work Knowledge Test",
+    "value": "future_work_learn",
     "questions": [
       {
         "question-text": "How is automation changing the workplace?",
@@ -173,7 +176,7 @@ let quesions = {
         "time": 30
       },
       {
-        "question-text": "Which skill is becoming more important for the future workforce?",
+        "question-text": "Which skill is becoming more important for the uture workforce?",
         "question-image": null,
         "options": [
           "Basic handwriting",
@@ -217,10 +220,12 @@ let quesions = {
 
 export let questionStore = writable([]);
 export let titleStore = writable("");
+let path_name = window.location.pathname.slice(1);
 
 async function quizFetch() {
-    questionStore.set(quesions["AI Knowledge Test"]["questions"]);
-    titleStore.set(quesions["AI Knowledge Test"]["title"]);
+    console.error(path_name)
+    questionStore.set(quesions[path_name]["questions"]);
+    titleStore.set(quesions[path_name]["title"]);
 };
 
 quizFetch();

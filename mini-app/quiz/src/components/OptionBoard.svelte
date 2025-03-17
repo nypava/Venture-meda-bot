@@ -23,7 +23,6 @@
         background: transparent;
         border-radius: 5px;
         border: transparent;
-        width: 20em;
         display: flex;
         align-items: center;
         margin: 0px;

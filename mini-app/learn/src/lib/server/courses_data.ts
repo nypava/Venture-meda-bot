@@ -28,41 +28,41 @@ const courses: ICourses[] = [
     "lessons": {
       "Understanding AI": {
         "What is AI?": {
-          "dir": "../../courses/content/ai_learn/understandingAI/whatIsAI.svx",
+          "dir": "/courses/content/ai_learn/understandingAI/whatIsAI.md",
           "time": "5min"
         },
         "AI in Daily Life": {
-          "dir": "../../courses/content/ai_learn/understandingAI/AIinDailyLife.svx",
+          "dir": "/courses/content/ai_learn/understandingAI/AIinDailyLife.md",
           "time": "5min"
         }
       },
       "AI in Everyday Tools": {
         "AI in Phone Apps": {
-          "dir": "../../courses/content/ai_learn/AIinEverydayTools/AIinPhoneApps.svx",
+          "dir": "/courses/content/ai_learn/AIinEverydayTools/AIinPhoneApps.md",
           "time": "7min"
         },
         "AI in Virtual Assistants": {
-          "dir": "../../courses/content/ai_learn/AIinEverydayTools/AIinVirtualAssistants.svx",
+          "dir": "/courses/content/ai_learn/AIinEverydayTools/AIinVirtualAssistants.md",
           "time": "7min"
         }
       },
       "AI in Healthcare": {
         "AI in Disease Diagnosis": {
-          "dir": "../../courses/content/ai_learn/AIinHealthcare/AIinDiseaseDiagnosis.svx",
+          "dir": "/courses/content/ai_learn/AIinHealthcare/AIinDiseaseDiagnosis.md",
           "time": "6min"
         },
         "AI in Doctor Decisions": {
-          "dir": "../../courses/content/ai_learn/AIinHealthcare/AIinDoctorDecisions.svx",
+          "dir": "/courses/content/ai_learn/AIinHealthcare/AIinDoctorDecisions.md",
           "time": "6min"
         }
       },
       "The Challenges of AI": {
         "AI Bias": {
-          "dir": "../../courses/content/ai_learn/challengesOfAI/AIBias.svx",
+          "dir": "/courses/content/ai_learn/challengesOfAI/AIBias.md",
           "time": "4min"
         },
         "Privacy Concerns in AI": {
-          "dir": "../../courses/content/ai_learn/challengesOfAI/privacyConcernsAI.svx",
+          "dir": "/courses/content/ai_learn/challengesOfAI/privacyConcernsAI.md",
           "time": "4min"
         }
       }
@@ -77,41 +77,41 @@ const courses: ICourses[] = [
     "lessons": {
       "Introduction to Web3": {
         "What is Web3?": {
-          "dir": "../../courses/content/web3_learn/introductionToWeb3/whatIsWeb3.svx",
+          "dir": "/courses/content/web3_learn/introductionToWeb3/whatIsWeb3.md",
           "time": "5min"
         },
         "Web3 vs Web2": {
-          "dir": "../../courses/content/web3_learn/introductionToWeb3/Web3vsWeb2.svx",
+          "dir": "/courses/content/web3_learn/introductionToWeb3/Web3vsWeb2.md",
           "time": "5min"
         }
       },
       "Blockchain and Cryptocurrencies": {
         "Understanding Blockchain": {
-          "dir": "../../courses/content/web3_learn/blockchainAndCryptos/understandingBlockchain.svx",
+          "dir": "/courses/content/web3_learn/blockchainAndCryptos/understandingBlockchain.md",
           "time": "7min"
         },
         "What is Cryptocurrency?": {
-          "dir": "../../courses/content/web3_learn/blockchainAndCryptos/whatIsCryptocurrency.svx",
+          "dir": "/courses/content/web3_learn/blockchainAndCryptos/whatIsCryptocurrency.md",
           "time": "7min"
         }
       },
       "Decentralized Applications (DApps)": {
         "What are DApps?": {
-          "dir": "../../courses/content/web3_learn/DAppsExplained/whatAreDApps.svx",
+          "dir": "/courses/content/web3_learn/DAppsExplained/whatAreDApps.md",
           "time": "6min"
         },
         "DApps Changing the Internet": {
-          "dir": "../../courses/content/web3_learn/DAppsExplained/DAppsChangingInternet.svx",
+          "dir": "/courses/content/web3_learn/DAppsExplained/DAppsChangingInternet.md",
           "time": "6min"
         }
       },
       "The Future of Web3": {
         "Web3 Privacy and Security": {
-          "dir": "../../courses/content/web3_learn/futureOfWeb3/Web3PrivacySecurity.svx",
+          "dir": "/courses/content/web3_learn/futureOfWeb3/Web3PrivacySecurity.md",
           "time": "4min"
         },
         "Challenges of Web3": {
-          "dir": "../../courses/content/web3_learn/futureOfWeb3/challengesOfWeb3.svx",
+          "dir": "/courses/content/web3_learn/futureOfWeb3/challengesOfWeb3.md",
           "time": "4min"
         }
       }
@@ -120,47 +120,47 @@ const courses: ICourses[] = [
   {
     "title": "The Future of Work",
     "time": "1 hr",
-    "value": "future_of_work_learn",
+    "value": "future_work_learn",
     "about": "This course explores the changing landscape of work, focusing on automation, the gig economy, and the skills needed for future success.",
     "cover_image": "https://i.ibb.co/Y4YHCH6S/futureofwork.jpg",
     "lessons": {
       "The Changing Workplace": {
         "Technology Reshaping Jobs": {
-          "dir": "../../courses/content/future_work_learn/changingWorkplace/technologyReshapingJobs.svx",
+          "dir": "/courses/content/future_work_learn/changingWorkplace/technologyReshapingJobs.md",
           "time": "5min"
         },
         "The Rise of Remote Work": {
-          "dir": "../../courses/content/future_work_learn/changingWorkplace/riseOfRemoteWork.svx",
+          "dir": "/courses/content/future_work_learn/changingWorkplace/riseOfRemoteWork.md",
           "time": "5min"
         }
       },
       "Automation and AI at Work": {
         "Jobs AI Takes Over": {
-          "dir": "../../courses/content/future_work_learn/automationAndAIatWork/jobsAItakesOver.svx",
+          "dir": "/courses/content/future_work_learn/automationAndAIatWork/jobsAItakesOver.md",
           "time": "7min"
         },
         "How Automation is Improving Work Efficiency": {
-          "dir": "../../courses/content/future_work_learn/automationAndAIatWork/automationImprovingEfficiency.svx",
+          "dir": "/courses/content/future_work_learn/automationAndAIatWork/automationImprovingEfficiency.md",
           "time": "7min"
         }
       },
       "The Gig Economy": {
         "What is the Gig Economy?": {
-          "dir": "../../courses/content/future_work_learn/gigEconomy/whatIsGigEconomy.svx",
+          "dir": "/courses/content/future_work_learn/gigEconomy/whatIsGigEconomy.md",
           "time": "6min"
         },
         "The Benefits and Challenges of Gig Work": {
-          "dir": "../../courses/content/future_work_learn/gigEconomy/benefitsAndChallengesGigWork.svx",
+          "dir": "/courses/content/future_work_learn/gigEconomy/benefitsAndChallengesGigWork.md",
           "time": "6min"
         }
       },
       "Skills for the Future": {
         "Important Skills for the Future": {
-          "dir": "../../courses/content/future_work_learn/skillsForTheFuture/importantFutureSkills.svx",
+          "dir": "/courses/content/future_work_learn/skillsForTheFuture/importantFutureSkills.md",
           "time": "4min"
         },
         "How to Stay Relevant in a Changing Job Market": {
-          "dir": "../../courses/content/future_work_learn/skillsForTheFuture/stayingRelevantJobMarket.svx",
+          "dir": "/courses/content/future_work_learn/skillsForTheFuture/stayingRelevantJobMarket.md",
           "time": "4min"
         }
       }

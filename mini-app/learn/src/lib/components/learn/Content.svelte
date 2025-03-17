@@ -41,11 +41,13 @@
     messages.push({ text: data.response, sender: "bot" }); 
   }  
 
-  $effect(()=> {
-    MarkdownContent = null;
-    import(/* @vite-ignore */ current_course.course["dir"]).then((module) => {
-      MarkdownContent = module.default;
-    })
+  $effect(async ()=> {
+    try {
+      const res = await fetch(current_course.course["dir"]);
+      MarkdownContent = await res.text();
+    } catch (error) {
+      console.error("Failed to load content:", error);
+    }
   })
   </script>
 
@@ -87,7 +89,7 @@
   <div>
     <div class="flex justify-center">
       <div class="prose prose-ol:my-[5px] prose-ul:my-[5px]  prose-headings:my-1 prose-headings:text-lg text-tg-text text-sm prose-p:my-1 prose-li:m-0 prose-code:m-0 p-3 prose-headings:text-tg-text prose-strong:text-tg-text">
-        <MarkdownContent/>
+        <SvelteMarkdown source={MarkdownContent} ></SvelteMarkdown>
       </div>
     </div> 
   </div>
