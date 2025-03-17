@@ -1,3 +1,4 @@
 pytelegrambotapi
 python-dotenv
-git+https://github.com/benjamintenny/mongo-python-driver-proxy
+pymongo
+pillow
